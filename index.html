@@ -3,74 +3,177 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rent4All | Leasing & Tenant Placement Windsor</title>
+  <title>Rent4All | Windsor Leasing & Tenant Placement</title>
+  <meta name="description" content="Rent4All provides Windsor leasing services, tenant placement, and landlord support for rental properties in Windsor, Ontario.">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-overlay">
-    <div class="hero-content">
-      <h1>Windsor Property Management and Tenant Placement Services for Ontario Landlords</h1>
-      <p>
-        Rent4All provides Windsor property management, tenant placement, leasing support, rental marketing,
-        application processing, and landlord-focused services designed to help fill vacancies faster and manage rental properties with confidence.
-      </p>
-      <div class="hero-buttons">
-        <a href="#" class="btn primary">List Your Property</a>
-        <a href="#" class="btn secondary">Browse Rentals</a>
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#" class="site-logo">
+        <img src="images/Rent4All-Tenant-Placement-Logo.png" alt="Rent4All Leasing and Tenant Placement Logo">
+      </a>
+
+      <nav class="site-nav">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#areas">Areas</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#rentals" class="header-btn header-btn-outline">Browse Rentals</a>
+        <a href="#contact" class="header-btn header-btn-primary">List Your Property</a>
+      </div>
+
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#areas">Areas</a>
+      <a href="#contact">Contact</a>
+      <a href="#rentals" class="header-btn header-btn-outline">Browse Rentals</a>
+      <a href="#contact" class="header-btn header-btn-primary">List Your Property</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Windsor Leasing and Tenant Placement Services for Landlords</h1>
+        <p>
+          Rent4All helps Windsor landlords market rental properties, attract qualified tenants,
+          manage leasing inquiries, and simplify tenant placement with modern, professional support.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn primary">List Your Property</a>
+          <a href="#rentals" class="btn secondary">Browse Rentals</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- PRICING SECTION -->
-<section class="pricing">
-  <h2>Simple, Step-Based Leasing</h2>
-  <p class="subtitle">Start with a listing. Add help only when you need it.</p>
+  </section>
 
-  <div class="pricing-grid">
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2>Our Leasing Services</h2>
+      <p class="section-intro">
+        We help landlords fill vacancies faster with professional marketing, tenant screening,
+        and leasing support designed for Windsor rental properties.
+      </p>
 
-    <div class="card">
-      <h3>Step 1</h3>
-      <h4>MLS® Listing</h4>
-      <p class="price">$549</p>
-      <ul>
-        <li>REALTOR.ca exposure</li>
-        <li>2,000+ website syndication</li>
-        <li>Listing setup</li>
-      </ul>
+      <div class="services-grid">
+        <div class="card">
+          <h3>Tenant Placement</h3>
+          <p>We help you attract and place qualified tenants with a streamlined rental process.</p>
+        </div>
+
+        <div class="card">
+          <h3>Rental Marketing</h3>
+          <p>Professional listing setup, photos, and advertising support to increase exposure.</p>
+        </div>
+
+        <div class="card">
+          <h3>Application Processing</h3>
+          <p>We help organize inquiries, applications, and leasing communication efficiently.</p>
+        </div>
+
+        <div class="card">
+          <h3>Landlord Support</h3>
+          <p>Flexible support for landlords who want help with leasing without full management.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card highlight">
-      <h3>Step 2</h3>
-      <h4>Listing Prep + Showings</h4>
-      <p class="price">$250</p>
-      <ul>
-        <li>Photos + video</li>
-        <li>Listing optimization</li>
-        <li>Lockbox install</li>
-        <li>Leasing agent + showings</li>
-      </ul>
+  <!-- PRICING -->
+  <section class="section pricing-section" id="pricing">
+    <div class="container">
+      <h2>Simple Pricing</h2>
+      <p class="section-intro">
+        Choose the level of leasing support that fits your property and your goals.
+      </p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Basic Listing</h3>
+          <p class="price">$199</p>
+          <ul>
+            <li>Property listing setup</li>
+            <li>Basic marketing support</li>
+            <li>Lead forwarding</li>
+          </ul>
+        </div>
+
+        <div class="pricing-card featured">
+          <h3>Tenant Placement</h3>
+          <p class="price">$350</p>
+          <ul>
+            <li>Tenant screening</li>
+            <li>Application processing</li>
+            <li>Lease preparation</li>
+            <li>First and last coordination</li>
+          </ul>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Full Leasing Support</h3>
+          <p class="price">$1,149</p>
+          <ul>
+            <li>Photos and video</li>
+            <li>Listing optimization</li>
+            <li>Lockbox install</li>
+            <li>Leasing agent and showings</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Step 3</h3>
-      <h4>Leasing Completion</h4>
-      <p class="price">$350</p>
-      <ul>
-        <li>Tenant screening</li>
-        <li>Application processing</li>
-        <li>Lease preparation</li>
-        <li>First & last coordination</li>
-      </ul>
+  <!-- AREAS -->
+  <section class="section" id="areas">
+    <div class="container">
+      <h2>Areas We Cover</h2>
+      <p class="section-intro">
+        We serve Windsor and surrounding rental markets with leasing and tenant placement support.
+      </p>
+
+      <div class="areas-list">
+        <span>Windsor</span>
+        <span>Walkerville</span>
+        <span>South Windsor</span>
+        <span>Downtown Windsor</span>
+        <span>Tecumseh</span>
+        <span>Lasalle</span>
+      </div>
     </div>
+  </section>
 
-  </div>
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <h2>Ready to List Your Property?</h2>
+      <p class="section-intro">
+        Contact Rent4All to get started with leasing and tenant placement support in Windsor.
+      </p>
 
-  <div class="cta">
-    <p>Total full-service cost: <strong>$1,149</strong></p>
-    <a href="#" class="btn primary">Get Started</a>
-  </div>
-</section>
+      <div class="contact-box">
+        <p>Email: paul@olhgroup.ca</p>
+        <p>Phone: 519-258-3966</p>
+        <a href="mailto:paul@olhgroup.ca" class="btn primary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
