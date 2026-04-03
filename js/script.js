@@ -1,3 +1,6 @@
+/* =========================
+   HEADER SCROLL EFFECT
+========================== */
 const header = document.getElementById("siteHeader");
 const mobileMenuToggle = document.getElementById("mobileMenuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
@@ -11,6 +14,9 @@ window.addEventListener("scroll", function () {
   }
 });
 
+/* =========================
+   MOBILE MENU TOGGLE
+========================== */
 if (mobileMenuToggle && mobileMenu) {
   mobileMenuToggle.addEventListener("click", function () {
     mobileMenu.classList.toggle("active");
@@ -20,17 +26,24 @@ if (mobileMenuToggle && mobileMenu) {
   });
 }
 
+/* =========================
+   CLOSE MOBILE MENU ON CLICK
+========================== */
 document.querySelectorAll(".mobile-menu a").forEach((link) => {
   link.addEventListener("click", function () {
     if (mobileMenu) {
       mobileMenu.classList.remove("active");
     }
+
     if (mobileMenuToggle) {
       mobileMenuToggle.setAttribute("aria-expanded", "false");
     }
   });
 });
 
+/* =========================
+   FADE-IN ON SCROLL
+========================== */
 if (fadeItems.length > 0) {
   const observer = new IntersectionObserver(
     (entries) => {

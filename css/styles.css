@@ -1,11 +1,15 @@
-/* RESET */
+/* =========================
+   RESET
+========================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BASE */
+/* =========================
+   BASE
+========================== */
 html {
   scroll-behavior: smooth;
 }
@@ -32,33 +36,34 @@ a {
   margin: 0 auto;
 }
 
-/* HEADER */
+/* =========================
+   HEADER / NAVIGATION
+========================== */
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: transparent;
+  background: #000000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.3s ease;
 }
 
 .site-header.scrolled {
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  background: #000000;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 88px;
+  min-height: 96px;
   gap: 24px;
 }
 
 .site-logo img {
-  height: 62px;
+  height: 82px;
   width: auto;
 }
 
@@ -75,10 +80,6 @@ a {
   transition: color 0.3s ease;
 }
 
-.site-header.scrolled .site-nav a {
-  color: #0b1f3a;
-}
-
 .site-nav a:hover {
   color: #facc15;
 }
@@ -91,7 +92,7 @@ a {
 
 .header-btn {
   padding: 12px 18px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 14px;
   font-weight: 700;
   transition: all 0.3s ease;
@@ -101,22 +102,13 @@ a {
 }
 
 .header-btn-outline {
-  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
   color: #ffffff;
   background: transparent;
 }
 
 .header-btn-outline:hover {
   background: rgba(255, 255, 255, 0.12);
-}
-
-.site-header.scrolled .header-btn-outline {
-  border-color: #0b1f3a;
-  color: #0b1f3a;
-}
-
-.site-header.scrolled .header-btn-outline:hover {
-  background: #f5f7fa;
 }
 
 .header-btn-primary {
@@ -147,21 +139,17 @@ a {
   transition: all 0.3s ease;
 }
 
-.site-header.scrolled .mobile-menu-toggle span {
-  background: #0b1f3a;
-}
-
 .mobile-menu {
   display: none;
   flex-direction: column;
   gap: 16px;
   padding: 0 4% 24px;
-  background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.98);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
 .mobile-menu a {
-  color: #0b1f3a;
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -169,11 +157,13 @@ a {
   display: flex;
 }
 
-/* HERO */
+/* =========================
+   HERO SECTION
+========================== */
 .hero {
   min-height: 100vh;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)),
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.60)),
     url('../images/windsor-property-management-hero.jpg');
   background-size: cover;
   background-position: center;
@@ -187,11 +177,11 @@ a {
   width: 100%;
   text-align: center;
   color: #ffffff;
-  padding: 150px 20px 80px;
+  padding: 180px 20px 90px;
 }
 
 .hero-content {
-  max-width: 980px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -205,17 +195,17 @@ a {
 }
 
 .hero-content h1 {
-  font-size: 60px;
-  line-height: 1.08;
-  margin-bottom: 20px;
+  font-size: 66px;
+  line-height: 1.05;
+  margin-bottom: 22px;
   font-weight: 800;
 }
 
 .hero-text {
   font-size: 22px;
-  max-width: 860px;
-  margin: 0 auto 32px;
-  color: rgba(255, 255, 255, 0.92);
+  max-width: 920px;
+  margin: 0 auto 26px;
+  color: rgba(255, 255, 255, 0.94);
 }
 
 .hero-buttons {
@@ -223,11 +213,12 @@ a {
   gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .btn {
   padding: 14px 24px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
   font-weight: 700;
   transition: all 0.3s ease;
@@ -253,7 +244,9 @@ a {
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* GENERAL SECTIONS */
+/* =========================
+   GENERAL SECTIONS
+========================== */
 .section {
   padding: 90px 0;
 }
@@ -272,7 +265,9 @@ a {
   font-size: 18px;
 }
 
-/* SERVICES */
+/* =========================
+   SERVICES SECTION
+========================== */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -302,7 +297,9 @@ a {
   color: #5b6470;
 }
 
-/* PRICING */
+/* =========================
+   PRICING SECTION
+========================== */
 .pricing-section {
   background: #f7f9fc;
 }
@@ -352,7 +349,9 @@ a {
   border: 2px solid #facc15;
 }
 
-/* AREAS */
+/* =========================
+   AREAS SECTION
+========================== */
 .areas-list {
   display: flex;
   flex-wrap: wrap;
@@ -368,7 +367,9 @@ a {
   font-weight: 600;
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT SECTION
+========================== */
 .contact-section {
   background: #0b1f3a;
   color: #ffffff;
@@ -393,7 +394,83 @@ a {
   color: inherit;
 }
 
-/* FADE IN */
+/* =========================
+   FOOTER FADE
+========================== */
+.footer-fade {
+  height: 140px;
+  background: linear-gradient(to bottom, #ffffff 0%, #111111 100%);
+}
+
+/* =========================
+   FOOTER
+========================== */
+.site-footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 50px 0 0;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-brand {
+  max-width: 460px;
+}
+
+.footer-logo {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 18px;
+}
+
+.footer-tagline {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.footer-links a,
+.footer-contact a,
+.footer-contact p {
+  display: block;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: #facc15;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding: 18px 0 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+/* =========================
+   FADE IN ANIMATION
+========================== */
 .fade-in {
   opacity: 0;
   transform: translateY(35px);
@@ -405,7 +482,9 @@ a {
   transform: translateY(0);
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================== */
 @media (max-width: 1024px) {
   .site-nav,
   .header-actions {
@@ -417,30 +496,35 @@ a {
   }
 
   .services-grid,
-  .pricing-grid {
+  .pricing-grid,
+  .footer-inner {
     grid-template-columns: 1fr 1fr;
   }
 
   .hero-content h1 {
-    font-size: 46px;
+    font-size: 50px;
   }
 
   .hero-text {
     font-size: 20px;
   }
+
+  .site-logo img {
+    height: 72px;
+  }
 }
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 85vh;
+    min-height: 90vh;
   }
 
   .hero-overlay {
-    padding: 130px 20px 60px;
+    padding: 150px 20px 60px;
   }
 
   .hero-content h1 {
-    font-size: 36px;
+    font-size: 38px;
   }
 
   .hero-text {
@@ -448,7 +532,8 @@ a {
   }
 
   .services-grid,
-  .pricing-grid {
+  .pricing-grid,
+  .footer-inner {
     grid-template-columns: 1fr;
   }
 
@@ -461,10 +546,14 @@ a {
   }
 
   .site-logo img {
-    height: 50px;
+    height: 64px;
   }
 
   .header-inner {
-    min-height: 78px;
+    min-height: 88px;
+  }
+
+  .footer-logo {
+    width: 260px;
   }
 }
