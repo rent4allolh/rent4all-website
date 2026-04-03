@@ -348,7 +348,315 @@ a {
 .pricing-card.featured {
   border: 2px solid #facc15;
 }
+/* =========================
+   PRICING SECTION - ENHANCED
+========================== */
+.pricing-header {
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto 38px;
+}
 
+.pricing-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #245dff;
+  margin-bottom: 12px;
+}
+
+.pricing-intro {
+  max-width: 900px;
+}
+
+.pricing-trust-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.pricing-trust-logos img {
+  max-height: 52px;
+  width: auto;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 6px 10px;
+  border: 1px solid #e4e8ef;
+}
+
+.brokerage-note {
+  text-align: center;
+  margin-bottom: 34px;
+  color: #445066;
+  font-size: 15px;
+}
+
+.pricing-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+.featured-card {
+  border: 2px solid #facc15;
+  position: relative;
+}
+
+.pricing-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #facc15;
+  color: #111111;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 8px 10px;
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.pricing-image-wrap {
+  margin: -6px -6px 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f5f7fb;
+  border: 1px solid #e7ebf0;
+}
+
+.pricing-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.pricing-card .pricing-subtitle {
+  color: #5b6470;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.pricing-card .price span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5b6470;
+}
+
+.pricing-payment-note {
+  color: #245dff;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.pricing-features {
+  padding-left: 20px;
+  margin-bottom: 22px;
+}
+
+.pricing-features li {
+  margin-bottom: 11px;
+  color: #4e5868;
+  line-height: 1.55;
+}
+
+.pricing-card-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0b1f3a;
+}
+
+.text-link:hover {
+  color: #245dff;
+}
+
+.legal-guarantee-box {
+  margin-top: 40px;
+  background: #ffffff;
+  border: 1px solid #e3e8f0;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.legal-guarantee-box h3 {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.legal-guarantee-box p {
+  color: #4f5a69;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.legal-guarantee-list {
+  padding-left: 20px;
+}
+
+.legal-guarantee-list li {
+  margin-bottom: 10px;
+  color: #4f5a69;
+}
+
+.savings-calculator {
+  margin-top: 40px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+  border: 1px solid #e3e8f0;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.savings-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 26px;
+}
+
+.savings-header h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.savings-header p {
+  color: #4f5a69;
+  line-height: 1.7;
+}
+
+.slider-wrap {
+  max-width: 850px;
+  margin: 0 auto 28px;
+}
+
+.slider-wrap label {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.slider-value-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.slider-value-row input[type="range"] {
+  flex: 1;
+}
+
+.rent-display {
+  min-width: 120px;
+  text-align: center;
+  background: #0b1f3a;
+  color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.savings-results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.savings-box {
+  background: #ffffff;
+  border: 1px solid #e3e8f0;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+}
+
+.savings-box.highlight {
+  border: 2px solid #facc15;
+}
+
+.savings-box h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.savings-cost {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0b1f3a;
+  margin-bottom: 10px;
+}
+
+.savings-save {
+  color: #245dff;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.pricing-disclosures {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #576172;
+  line-height: 1.7;
+}
+
+.pricing-disclosures p {
+  margin-bottom: 12px;
+}
+
+/* =========================
+   RESPONSIVE - PRICING
+========================== */
+@media (max-width: 1024px) {
+  .pricing-grid-3,
+  .savings-results {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card-image {
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-trust-logos {
+    gap: 14px;
+  }
+
+  .pricing-trust-logos img {
+    max-height: 44px;
+  }
+
+  .slider-value-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rent-display {
+    width: 100%;
+  }
+
+  .legal-guarantee-box,
+  .savings-calculator {
+    padding: 22px;
+  }
+
+  .savings-header h3 {
+    font-size: 24px;
+  }
+}
 /* =========================
    AREAS SECTION
 ========================== */

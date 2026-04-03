@@ -62,3 +62,39 @@ if (fadeItems.length > 0) {
     observer.observe(item);
   });
 }
+/* =========================
+   PRICING SAVINGS CALCULATOR
+========================== */
+const rentSlider = document.getElementById("rentSlider");
+const rentDisplay = document.getElementById("rentDisplay");
+const mlsOnlyCost = document.getElementById("mlsOnlyCost");
+const mlsOnlySave = document.getElementById("mlsOnlySave");
+const mlsTenantCost = document.getElementById("mlsTenantCost");
+const mlsTenantSave = document.getElementById("mlsTenantSave");
+const fullServiceCost = document.getElementById("fullServiceCost");
+
+function formatCurrency(value) {
+  return `$${Number(value).toLocaleString()}`;
+}
+
+function updateSavingsCalculator() {
+  if (!rentSlider) return;
+
+  const rent = Number(rentSlider.value);
+  const mlsOnly = 549;
+  const mlsTenant = 549 + 200 + 350;
+  const fullService = rent;
+
+  rentDisplay.textContent = formatCurrency(rent);
+  mlsOnlyCost.textContent = `${formatCurrency(mlsOnly)} + HST`;
+  mlsTenantCost.textContent = `${formatCurrency(mlsTenant)} + HST`;
+  fullServiceCost.textContent = `${formatCurrency(fullService)} + HST`;
+
+  mlsOnlySave.textContent = `Save ${formatCurrency(fullService - mlsOnly)} vs Full Service`;
+  mlsTenantSave.textContent = `Save ${formatCurrency(fullService - mlsTenant)} vs Full Service`;
+}
+
+if (rentSlider) {
+  rentSlider.addEventListener("input", updateSavingsCalculator);
+  updateSavingsCalculator();
+}
