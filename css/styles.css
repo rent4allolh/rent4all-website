@@ -349,12 +349,12 @@ a {
   border: 2px solid #facc15;
 }
 /* =========================
-   PRICING SECTION - ENHANCED
+   PRICING SECTION - CLEAN
 ========================== */
 .pricing-header {
   text-align: center;
   max-width: 980px;
-  margin: 0 auto 38px;
+  margin: 0 auto 32px;
 }
 
 .pricing-eyebrow {
@@ -368,20 +368,22 @@ a {
 
 .pricing-intro {
   max-width: 900px;
+  margin: 0 auto;
 }
 
 .pricing-trust-logos {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 22px;
+  gap: 18px;
   flex-wrap: wrap;
-  margin-bottom: 18px;
+  margin: 0 auto 14px;
 }
 
 .pricing-trust-logos img {
-  max-height: 52px;
+  max-height: 44px;
   width: auto;
+  max-width: 180px;
   object-fit: contain;
   background: #ffffff;
   border-radius: 10px;
@@ -391,7 +393,7 @@ a {
 
 .brokerage-note {
   text-align: center;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
   color: #445066;
   font-size: 15px;
 }
@@ -399,50 +401,78 @@ a {
 .pricing-grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
+  gap: 24px;
   align-items: stretch;
+}
+
+.pricing-card {
+  background: #ffffff;
+  border: 1px solid #e7ebf0;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .featured-card {
   border: 2px solid #facc15;
-  position: relative;
 }
 
 .pricing-badge {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 14px;
+  right: 14px;
   background: #facc15;
   color: #111111;
   font-size: 12px;
   font-weight: 800;
-  padding: 8px 10px;
+  padding: 7px 10px;
   border-radius: 999px;
   z-index: 2;
 }
 
 .pricing-image-wrap {
-  margin: -6px -6px 20px;
-  border-radius: 12px;
+  width: 100%;
+  height: 150px;
   overflow: hidden;
-  background: #f5f7fb;
+  border-radius: 12px;
+  background: #f7f9fc;
   border: 1px solid #e7ebf0;
+  margin-bottom: 16px;
 }
 
 .pricing-card-image {
   width: 100%;
-  height: 220px;
+  height: 100%;
   object-fit: cover;
 }
 
-.pricing-card .pricing-subtitle {
+.pricing-card h3 {
+  font-size: 22px;
+  line-height: 1.25;
+  margin-bottom: 10px;
+  color: #0b1f3a;
+}
+
+.pricing-subtitle {
   color: #5b6470;
   font-size: 15px;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.pricing-card .price {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #0b1f3a;
   margin-bottom: 14px;
 }
 
 .pricing-card .price span {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #5b6470;
 }
@@ -450,18 +480,18 @@ a {
 .pricing-payment-note {
   color: #245dff;
   font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 18px;
+  line-height: 1.65;
+  margin-bottom: 16px;
   font-weight: 600;
 }
 
 .pricing-features {
   padding-left: 20px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .pricing-features li {
-  margin-bottom: 11px;
+  margin-bottom: 10px;
   color: #4e5868;
   line-height: 1.55;
 }
@@ -476,31 +506,32 @@ a {
 .text-link {
   font-size: 14px;
   font-weight: 700;
-  color: #0b1f3a;
-}
-
-.text-link:hover {
   color: #245dff;
 }
 
+.text-link:hover {
+  color: #0b1f3a;
+}
+
 .legal-guarantee-box {
-  margin-top: 40px;
+  margin-top: 36px;
   background: #ffffff;
   border: 1px solid #e3e8f0;
   border-radius: 16px;
-  padding: 30px;
+  padding: 28px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
 }
 
 .legal-guarantee-box h3 {
   font-size: 26px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
+  color: #0b1f3a;
 }
 
 .legal-guarantee-box p {
   color: #4f5a69;
-  margin-bottom: 16px;
   line-height: 1.7;
+  margin-bottom: 14px;
 }
 
 .legal-guarantee-list {
@@ -508,28 +539,30 @@ a {
 }
 
 .legal-guarantee-list li {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   color: #4f5a69;
+  line-height: 1.6;
 }
 
 .savings-calculator {
-  margin-top: 40px;
+  margin-top: 36px;
   background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
   border: 1px solid #e3e8f0;
   border-radius: 16px;
-  padding: 32px;
+  padding: 34px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
 }
 
 .savings-header {
   text-align: center;
   max-width: 900px;
-  margin: 0 auto 26px;
+  margin: 0 auto 24px;
 }
 
 .savings-header h3 {
-  font-size: 30px;
+  font-size: 32px;
   margin-bottom: 10px;
+  color: #0b1f3a;
 }
 
 .savings-header p {
@@ -538,35 +571,62 @@ a {
 }
 
 .slider-wrap {
-  max-width: 850px;
-  margin: 0 auto 28px;
+  max-width: 780px;
+  margin: 0 auto 30px;
+  text-align: center;
 }
 
 .slider-wrap label {
   display: block;
-  font-size: 15px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.slider-value-row {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.slider-value-row input[type="range"] {
-  flex: 1;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: #0b1f3a;
 }
 
 .rent-display {
-  min-width: 120px;
+  display: inline-block;
+  min-width: 160px;
   text-align: center;
   background: #0b1f3a;
   color: #ffffff;
-  padding: 12px 16px;
-  border-radius: 10px;
+  padding: 14px 18px;
+  border-radius: 12px;
   font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+#rentSlider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 14px;
+  border-radius: 999px;
+  background: linear-gradient(to right, #245dff 0%, #79b7ff 100%);
+  outline: none;
+}
+
+#rentSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #facc15;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+#rentSlider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #facc15;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .savings-results {
@@ -590,6 +650,7 @@ a {
 .savings-box h4 {
   font-size: 22px;
   margin-bottom: 10px;
+  color: #0b1f3a;
 }
 
 .savings-cost {
@@ -614,6 +675,41 @@ a {
 
 .pricing-disclosures p {
   margin-bottom: 12px;
+}
+
+/* =========================
+   RESPONSIVE - PRICING
+========================== */
+@media (max-width: 1100px) {
+  .pricing-grid-3,
+  .savings-results {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-trust-logos img {
+    max-height: 38px;
+    max-width: 150px;
+  }
+
+  .pricing-image-wrap {
+    height: 190px;
+  }
+
+  .legal-guarantee-box,
+  .savings-calculator {
+    padding: 22px;
+  }
+
+  .savings-header h3 {
+    font-size: 24px;
+  }
+
+  .rent-display {
+    width: 100%;
+    min-width: 0;
+  }
 }
 
 /* =========================

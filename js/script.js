@@ -74,7 +74,7 @@ const mlsTenantSave = document.getElementById("mlsTenantSave");
 const fullServiceCost = document.getElementById("fullServiceCost");
 
 function formatCurrency(value) {
-  return `$${Number(value).toLocaleString()}`;
+  return "$" + Number(value).toLocaleString();
 }
 
 function updateSavingsCalculator() {
@@ -82,16 +82,32 @@ function updateSavingsCalculator() {
 
   const rent = Number(rentSlider.value);
   const mlsOnly = 549;
-  const mlsTenant = 549 + 200 + 350;
+  const mlsTenant = 1099;
   const fullService = rent;
 
-  rentDisplay.textContent = formatCurrency(rent);
-  mlsOnlyCost.textContent = `${formatCurrency(mlsOnly)} + HST`;
-  mlsTenantCost.textContent = `${formatCurrency(mlsTenant)} + HST`;
-  fullServiceCost.textContent = `${formatCurrency(fullService)} + HST`;
+  if (rentDisplay) {
+    rentDisplay.textContent = formatCurrency(rent);
+  }
 
-  mlsOnlySave.textContent = `Save ${formatCurrency(fullService - mlsOnly)} vs Full Service`;
-  mlsTenantSave.textContent = `Save ${formatCurrency(fullService - mlsTenant)} vs Full Service`;
+  if (mlsOnlyCost) {
+    mlsOnlyCost.textContent = formatCurrency(mlsOnly) + " + HST";
+  }
+
+  if (mlsTenantCost) {
+    mlsTenantCost.textContent = formatCurrency(mlsTenant) + " + HST";
+  }
+
+  if (fullServiceCost) {
+    fullServiceCost.textContent = formatCurrency(fullService) + " + HST";
+  }
+
+  if (mlsOnlySave) {
+    mlsOnlySave.textContent = "Save " + formatCurrency(fullService - mlsOnly) + " vs Full Service";
+  }
+
+  if (mlsTenantSave) {
+    mlsTenantSave.textContent = "Save " + formatCurrency(fullService - mlsTenant) + " vs Full Service";
+  }
 }
 
 if (rentSlider) {
