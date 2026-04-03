@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const header = document.getElementById("siteHeader");
 const mobileMenuToggle = document.getElementById("mobileMenuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
@@ -41,3 +42,11 @@ const observer = new IntersectionObserver(
 fadeItems.forEach((item) => {
   observer.observe(item);
 });
+=======
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+}
+>>>>>>> 623dcd33ff09484a1e40e81415bf34db92af837f
