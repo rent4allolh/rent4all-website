@@ -6,6 +6,10 @@
 }
 
 /* BASE */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   color: #0b1f3a;
@@ -54,7 +58,7 @@ a {
 }
 
 .site-logo img {
-  height: 58px;
+  height: 62px;
   width: auto;
 }
 
@@ -91,6 +95,9 @@ a {
   font-size: 14px;
   font-weight: 700;
   transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-btn-outline {
@@ -99,9 +106,17 @@ a {
   background: transparent;
 }
 
+.header-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
 .site-header.scrolled .header-btn-outline {
   border-color: #0b1f3a;
   color: #0b1f3a;
+}
+
+.site-header.scrolled .header-btn-outline:hover {
+  background: #f5f7fa;
 }
 
 .header-btn-primary {
@@ -158,8 +173,8 @@ a {
 .hero {
   min-height: 100vh;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url('images/windsor-property-management-hero.jpg');
+    linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.55)),
+    url('../images/windsor-property-management-hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -172,24 +187,35 @@ a {
   width: 100%;
   text-align: center;
   color: #ffffff;
-  padding: 120px 20px 40px;
+  padding: 150px 20px 80px;
 }
 
 .hero-content {
-  max-width: 900px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
-.hero-content h1 {
-  font-size: 56px;
-  line-height: 1.1;
+.hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #facc15;
   margin-bottom: 18px;
 }
 
-.hero-content p {
+.hero-content h1 {
+  font-size: 60px;
+  line-height: 1.08;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.hero-text {
   font-size: 22px;
-  max-width: 850px;
-  margin: 0 auto 30px;
+  max-width: 860px;
+  margin: 0 auto 32px;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .hero-buttons {
@@ -229,19 +255,19 @@ a {
 
 /* GENERAL SECTIONS */
 .section {
-  padding: 80px 0;
+  padding: 90px 0;
 }
 
 .section h2 {
   text-align: center;
-  font-size: 38px;
+  font-size: 40px;
   margin-bottom: 14px;
 }
 
 .section-intro {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 40px;
+  margin: 0 auto 42px;
   color: #5b6470;
   font-size: 18px;
 }
@@ -259,6 +285,12 @@ a {
   border-radius: 14px;
   padding: 28px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
 }
 
 .card h3 {
@@ -287,6 +319,12 @@ a {
   border-radius: 14px;
   padding: 30px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
 }
 
 .pricing-card h3 {
@@ -351,6 +389,22 @@ a {
   margin-bottom: 12px;
 }
 
+.contact-box a {
+  color: inherit;
+}
+
+/* FADE IN */
+.fade-in {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .site-nav,
@@ -368,10 +422,10 @@ a {
   }
 
   .hero-content h1 {
-    font-size: 44px;
+    font-size: 46px;
   }
 
-  .hero-content p {
+  .hero-text {
     font-size: 20px;
   }
 }
@@ -381,11 +435,15 @@ a {
     min-height: 85vh;
   }
 
-  .hero-content h1 {
-    font-size: 34px;
+  .hero-overlay {
+    padding: 130px 20px 60px;
   }
 
-  .hero-content p {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-text {
     font-size: 18px;
   }
 
@@ -395,7 +453,7 @@ a {
   }
 
   .section {
-    padding: 60px 0;
+    padding: 65px 0;
   }
 
   .section h2 {
@@ -403,7 +461,7 @@ a {
   }
 
   .site-logo img {
-    height: 48px;
+    height: 50px;
   }
 
   .header-inner {
