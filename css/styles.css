@@ -675,6 +675,28 @@ a {
   border-radius: 999px;
   font-weight: 600;
 }
+/* =========================
+   AREAS NOTE
+========================== */
+.areas-note {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.areas-note p {
+  color: #5b6470;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.areas-note a {
+  color: #245dff;
+  font-weight: 700;
+}
+
+.areas-note a:hover {
+  color: #0b1f3a;
+}
 
 /* =========================
    CONTACT SECTION
