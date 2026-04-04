@@ -20,7 +20,6 @@ window.addEventListener("scroll", function () {
 if (mobileMenuToggle && mobileMenu) {
   mobileMenuToggle.addEventListener("click", function () {
     mobileMenu.classList.toggle("active");
-
     const expanded = mobileMenu.classList.contains("active");
     mobileMenuToggle.setAttribute("aria-expanded", expanded);
   });
@@ -62,6 +61,7 @@ if (fadeItems.length > 0) {
     observer.observe(item);
   });
 }
+
 /* =========================
    PRICING SAVINGS CALCULATOR
 ========================== */
